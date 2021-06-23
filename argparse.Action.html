@@ -65,7 +65,7 @@
       </div>
 
       <div class="extrasDocstring">
-        <p><code><span class="py-keyword">class</span> <span class="py-defname">Action</span>(<a href="argparse._AttributeHolder.html" title="argparse._AttributeHolder">_AttributeHolder</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L763" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._SubParsersAction._ChoicesPseudoAction.html">argparse._SubParsersAction._ChoicesPseudoAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code>, <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code></p>
+        <p><code><span class="py-keyword">class</span> <span class="py-defname">Action</span>(<a href="argparse._AttributeHolder.html" title="argparse._AttributeHolder">_AttributeHolder</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L763" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code>, <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._SubParsersAction._ChoicesPseudoAction.html">argparse._SubParsersAction._ChoicesPseudoAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code></p>
         <p><a href="classIndex.html#argparse.Action">View In Hierarchy</a></p>
       </div>
 
@@ -155,22 +155,22 @@ arguments.</p>
   <tr class="method">
     
     <td>Method</td>
+    <td><code><a href="#__call__">__call__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
     <td><code><a href="#__init__">__init__</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
+  </tr><tr class="method">
     
-    <td>Instance Variable</td>
-    <td><code><a href="#option_strings">option_strings</a></code></td>
+    <td>Method</td>
+    <td><code><a href="#format_usage">format_usage</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#dest">dest</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
-    
-    <td>Instance Variable</td>
-    <td><code><a href="#nargs">nargs</a></code></td>
+    <td><code><a href="#choices">choices</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
@@ -185,17 +185,7 @@ arguments.</p>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#type">type</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
-    
-    <td>Instance Variable</td>
-    <td><code><a href="#choices">choices</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
-    
-    <td>Instance Variable</td>
-    <td><code><a href="#required">required</a></code></td>
+    <td><code><a href="#dest">dest</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
@@ -207,15 +197,25 @@ arguments.</p>
     <td>Instance Variable</td>
     <td><code><a href="#metavar">metavar</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="method">
+  </tr><tr class="instancevariable">
     
-    <td>Method</td>
-    <td><code><a href="#format_usage">format_usage</a></code></td>
+    <td>Instance Variable</td>
+    <td><code><a href="#nargs">nargs</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="method">
+  </tr><tr class="instancevariable">
     
-    <td>Method</td>
-    <td><code><a href="#__call__">__call__</a></code></td>
+    <td>Instance Variable</td>
+    <td><code><a href="#option_strings">option_strings</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#required">required</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#type">type</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method private">
     
@@ -253,6 +253,28 @@ arguments.</p>
         <div class="basemethod">
   
   
+  <a name="argparse.Action.__call__">
+    
+  </a>
+  <a name="__call__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__call__</span>(self, parser, namespace, values, option_string=None):
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L853">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code>, <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code></div>
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
   <a name="argparse.Action.__init__">
     
   </a>
@@ -262,73 +284,51 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">__init__</span>(self, option_strings, dest, nargs=None, const=None, default=None, type=None, choices=None, required=False, help=None, metavar=None):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L814">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L814">
       
       (source)
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._SubParsersAction._ChoicesPseudoAction.html">argparse._SubParsersAction._ChoicesPseudoAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code>, <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code></div>
+    <div class="interfaceinfo">overridden in <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code>, <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._SubParsersAction._ChoicesPseudoAction.html">argparse._SubParsersAction._ChoicesPseudoAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code></div>
     
     <div><p class="undocumented">Undocumented</p></div>
   </div>
-</div><div class="baseinstancevariable">
+</div><div class="basemethod">
   
   
-  <a name="argparse.Action.option_strings">
+  <a name="argparse.Action.format_usage">
     
   </a>
-  <a name="option_strings">
+  <a name="format_usage">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">option_strings</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L825">
+    <span class="py-keyword">def</span> <span class="py-defname">format_usage</span>(self):
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L850">
       
       (source)
     </a>
   </div>
-  <div class="functionBody">
-    
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="baseinstancevariable">
-  
-  
-  <a name="argparse.Action.dest">
-    
-  </a>
-  <a name="dest">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">dest</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L826">
-      
-      (source)
-    </a>
-  </div>
-  <div class="functionBody">
-    
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code></div>
     
     <div><p class="undocumented">Undocumented</p></div>
   </div>
 </div><div class="baseinstancevariable">
   
   
-  <a name="argparse.Action.nargs">
+  <a name="argparse.Action.choices">
     
   </a>
-  <a name="nargs">
+  <a name="choices">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">nargs</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L827">
+    <span class="py-defname">choices</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L831">
       
       (source)
     </a>
@@ -350,7 +350,7 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-defname">const</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L828">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L828">
       
       (source)
     </a>
@@ -372,7 +372,7 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-defname">default</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L829">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L829">
       
       (source)
     </a>
@@ -385,60 +385,16 @@ arguments.</p>
 </div><div class="baseinstancevariable">
   
   
-  <a name="argparse.Action.type">
+  <a name="argparse.Action.dest">
     
   </a>
-  <a name="type">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">type</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L830">
-      
-      (source)
-    </a>
-  </div>
-  <div class="functionBody">
-    
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="baseinstancevariable">
-  
-  
-  <a name="argparse.Action.choices">
-    
-  </a>
-  <a name="choices">
+  <a name="dest">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">choices</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L831">
-      
-      (source)
-    </a>
-  </div>
-  <div class="functionBody">
-    
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="baseinstancevariable">
-  
-  
-  <a name="argparse.Action.required">
-    
-  </a>
-  <a name="required">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">required</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L832">
+    <span class="py-defname">dest</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L826">
       
       (source)
     </a>
@@ -460,7 +416,7 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-defname">help</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L833">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L833">
       
       (source)
     </a>
@@ -482,7 +438,95 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-defname">metavar</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L834">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L834">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="argparse.Action.nargs">
+    
+  </a>
+  <a name="nargs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nargs</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L827">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="argparse.Action.option_strings">
+    
+  </a>
+  <a name="option_strings">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">option_strings</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L825">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="argparse.Action.required">
+    
+  </a>
+  <a name="required">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">required</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L832">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="argparse.Action.type">
+    
+  </a>
+  <a name="type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">type</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L830">
       
       (source)
     </a>
@@ -504,57 +548,13 @@ arguments.</p>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">_get_kwargs</span>(self):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L836">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/argparse.py#L836">
       
       (source)
     </a>
   </div>
   <div class="docstring functionBody">
     <div class="interfaceinfo">overrides <code><a href="argparse._AttributeHolder.html#_get_kwargs">argparse._AttributeHolder._get_kwargs</a></code></div>
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="basemethod">
-  
-  
-  <a name="argparse.Action.format_usage">
-    
-  </a>
-  <a name="format_usage">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-keyword">def</span> <span class="py-defname">format_usage</span>(self):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L850">
-      
-      (source)
-    </a>
-  </div>
-  <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code></div>
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="basemethod">
-  
-  
-  <a name="argparse.Action.__call__">
-    
-  </a>
-  <a name="__call__">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-keyword">def</span> <span class="py-defname">__call__</span>(self, parser, namespace, values, option_string=None):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/argparse.py#L853">
-      
-      (source)
-    </a>
-  </div>
-  <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="argparse._AppendAction.html">argparse._AppendAction</a></code>, <code><a href="argparse._AppendConstAction.html">argparse._AppendConstAction</a></code>, <code><a href="argparse._CountAction.html">argparse._CountAction</a></code>, <code><a href="argparse._HelpAction.html">argparse._HelpAction</a></code>, <code><a href="argparse._StoreAction.html">argparse._StoreAction</a></code>, <code><a href="argparse._StoreConstAction.html">argparse._StoreConstAction</a></code>, <code><a href="argparse._SubParsersAction.html">argparse._SubParsersAction</a></code>, <code><a href="argparse._VersionAction.html">argparse._VersionAction</a></code>, <code><a href="argparse.BooleanOptionalAction.html">argparse.BooleanOptionalAction</a></code></div>
     
     <div><p class="undocumented">Undocumented</p></div>
   </div>
@@ -568,7 +568,7 @@ arguments.</p>
   <div class="container">
     <a href="index.html">API Documentation</a> for <a href="https://github.com/bw2/ConfigArgParse" class="projecthome">ConfigArgParse 1.5</a>,
   generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-    21.2.2 at 2021-06-23 21:17:46.
+    21.2.2 at 2021-06-23 21:54:19.
   </div>
 </footer>
 

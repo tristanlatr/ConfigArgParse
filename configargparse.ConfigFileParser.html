@@ -65,13 +65,13 @@
       </div>
 
       <div class="extrasDocstring">
-        <p><code><span class="py-keyword">class</span> <span class="py-defname">ConfigFileParser</span>(<span title="object">object</span>): <a href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L67" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="configargparse.ConfigparserConfigFileParser.html">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html">configargparse.YAMLConfigFileParser</a></code></p>
+        <p><code><span class="py-keyword">class</span> <span class="py-defname">ConfigFileParser</span>(<a href="https://docs.python.org/3/library/functions.html#object" title="object">object</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L67" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="configargparse.ConfigparserConfigFileParser.html">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html">configargparse.YAMLConfigFileParser</a></code></p>
         <p><a href="classIndex.html#configargparse.ConfigFileParser">View In Hierarchy</a></p>
       </div>
 
       <div class="moduleDocstring">
-        <div>This abstract class can be extended to add support for new config file
-formats</div>
+        <div><p class="pre">This abstract class can be extended to add support for new config file
+formats</p></div>
       </div>
 
       <div id="splitTables">
@@ -82,17 +82,17 @@ formats</div>
     
     <td>Method</td>
     <td><code><a href="#get_syntax_description">get_syntax_description</a></code></td>
-    <td>Returns a string describing the config file syntax.</td>
+    <td><span>Returns a string describing the config file syntax.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#parse">parse</a></code></td>
-    <td>Parses the keys and values from a config file.</td>
+    <td><span>Parses the keys and values from a config file.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#serialize">serialize</a></code></td>
-    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+    <td><span>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</span></td>
   </tr>
 </table>
         
@@ -114,7 +114,7 @@ formats</div>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">get_syntax_description</span>(self):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L71">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L71">
       
       (source)
     </a>
@@ -122,7 +122,7 @@ formats</div>
   <div class="docstring functionBody">
     <div class="interfaceinfo">overridden in <code><a href="configargparse.ConfigparserConfigFileParser.html">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html">configargparse.YAMLConfigFileParser</a></code></div>
     
-    <div>Returns a string describing the config file syntax.</div>
+    <div><p class="pre">Returns a string describing the config file syntax.</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -136,7 +136,7 @@ formats</div>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">parse</span>(self, stream):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L75">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L75">
       
       (source)
     </a>
@@ -144,13 +144,19 @@ formats</div>
   <div class="docstring functionBody">
     <div class="interfaceinfo">overridden in <code><a href="configargparse.ConfigparserConfigFileParser.html">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html">configargparse.YAMLConfigFileParser</a></code></div>
     
-    <div><p>Parses the keys and values from a config file.</p>
-<p>NOTE: For keys that were specified to configargparse as
+    <div><p class="pre">Parses the keys and values from a config file.
+
+NOTE: For keys that were specified to configargparse as
 action="store_true" or "store_false", the config file value must be
-one of: "yes", "no", "true", "false". Otherwise an error will be raised.</p>
-<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">stream</span></td><td class="fieldArgDesc">A config file input stream (such as an open file object).</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>OrderedDict</code></td><td class="fieldArgDesc">Items where the keys are strings and the
-values are either strings or lists (eg. to support config file
-formats like YAML which allow lists).</td></tr></table></div>
+one of: "yes", "no", "true", "false". Otherwise an error will be raised.
+
+Args:
+    stream: A config file input stream (such as an open file object).
+
+Returns:
+    OrderedDict: Items where the keys are strings and the
+    values are either strings or lists (eg. to support config file
+    formats like YAML which allow lists).</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -164,7 +170,7 @@ formats like YAML which allow lists).</td></tr></table></div>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">serialize</span>(self, items):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L92">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L92">
       
       (source)
     </a>
@@ -172,10 +178,16 @@ formats like YAML which allow lists).</td></tr></table></div>
   <div class="docstring functionBody">
     <div class="interfaceinfo">overridden in <code><a href="configargparse.ConfigparserConfigFileParser.html">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html">configargparse.YAMLConfigFileParser</a></code></div>
     
-    <div>Does the inverse of config parsing by taking parsed values and
-converting them back to a string representing config file contents.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">items</span></td><td class="fieldArgDesc">an OrderedDict of items to be converted to the config file
-format. Keys should be strings, and values should be either strings
-or lists.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">Contents of config file as a string</td></tr></table></div>
+    <div><p class="pre">Does the inverse of config parsing by taking parsed values and
+converting them back to a string representing config file contents.
+
+Args:
+    items: an OrderedDict of items to be converted to the config file
+        format. Keys should be strings, and values should be either strings
+        or lists.
+
+Returns:
+    Contents of config file as a string</p></div>
   </div>
 </div>
 
@@ -187,7 +199,7 @@ or lists.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Retu
   <div class="container">
     <a href="index.html">API Documentation</a> for <a href="https://github.com/bw2/ConfigArgParse" class="projecthome">ConfigArgParse 1.5</a>,
   generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-    21.2.2 at 2021-06-23 21:17:46.
+    21.2.2 at 2021-06-23 21:54:19.
   </div>
 </footer>
 

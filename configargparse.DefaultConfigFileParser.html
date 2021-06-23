@@ -65,36 +65,35 @@
       </div>
 
       <div class="extrasDocstring">
-        <p><code><span class="py-keyword">class</span> <span class="py-defname">DefaultConfigFileParser</span>(<a href="configargparse.ConfigFileParser.html" title="configargparse.ConfigFileParser">ConfigFileParser</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L111" class="sourceLink">(source)</a></code></p>
+        <p><code><span class="py-keyword">class</span> <span class="py-defname">DefaultConfigFileParser</span>(<a href="configargparse.ConfigFileParser.html" title="configargparse.ConfigFileParser">ConfigFileParser</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L111" class="sourceLink">(source)</a></code></p>
         <p><a href="classIndex.html#configargparse.DefaultConfigFileParser">View In Hierarchy</a></p>
       </div>
 
       <div class="moduleDocstring">
-        <div><p>Based on a simplified subset of INI and YAML formats. Here is the
-supported syntax:</p>
-<pre class="rst-literal-block">
-# this is a comment
-; this is also a comment (.ini style)
----            # lines that start with --- are ignored (yaml style)
--------------------
-[section]      # .ini-style section names are treated as comments
+        <div><p class="pre">Based on a simplified subset of INI and YAML formats. Here is the
+supported syntax::
 
-# how to specify a key-value pair (all of these are equivalent):
-name value     # key is case sensitive: "Name" isn't "name"
-name = value   # (.ini style)  (white space is ignored, so name = value same as name=value)
-name: value    # (yaml style)
---name value   # (argparse style)
 
-# how to set a flag arg (eg. arg which has action="store_true")
---name
-name
-name = True    # "True" and "true" are the same
+    # this is a comment
+    ; this is also a comment (.ini style)
+    ---            # lines that start with --- are ignored (yaml style)
+    -------------------
+    [section]      # .ini-style section names are treated as comments
 
-# how to specify a list arg (eg. arg which has action="append")
-fruit = [apple, orange, lemon]
-indexes = [1, 12, 35 , 40]
-</pre>
-</div>
+    # how to specify a key-value pair (all of these are equivalent):
+    name value     # key is case sensitive: "Name" isn't "name"
+    name = value   # (.ini style)  (white space is ignored, so name = value same as name=value)
+    name: value    # (yaml style)
+    --name value   # (argparse style)
+
+    # how to set a flag arg (eg. arg which has action="store_true")
+    --name
+    name
+    name = True    # "True" and "true" are the same
+
+    # how to specify a list arg (eg. arg which has action="append")
+    fruit = [apple, orange, lemon]
+    indexes = [1, 12, 35 , 40]</p></div>
       </div>
 
       <div id="splitTables">
@@ -105,17 +104,17 @@ indexes = [1, 12, 35 , 40]
     
     <td>Method</td>
     <td><code><a href="#get_syntax_description">get_syntax_description</a></code></td>
-    <td>Returns a string describing the config file syntax.</td>
+    <td><span>Returns a string describing the config file syntax.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#parse">parse</a></code></td>
-    <td>Parses the keys + values from a config file.</td>
+    <td><span>Parses the keys + values from a config file.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#serialize">serialize</a></code></td>
-    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+    <td><span>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</span></td>
   </tr>
 </table>
         
@@ -137,7 +136,7 @@ indexes = [1, 12, 35 , 40]
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">get_syntax_description</span>(self):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L139">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L139">
       
       (source)
     </a>
@@ -145,7 +144,7 @@ indexes = [1, 12, 35 , 40]
   <div class="docstring functionBody">
     <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#get_syntax_description">configargparse.ConfigFileParser.get_syntax_description</a></code></div>
     
-    <div>Returns a string describing the config file syntax.</div>
+    <div><p class="pre">Returns a string describing the config file syntax.</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -159,7 +158,7 @@ indexes = [1, 12, 35 , 40]
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">parse</span>(self, stream):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L144">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L144">
       
       (source)
     </a>
@@ -167,7 +166,7 @@ indexes = [1, 12, 35 , 40]
   <div class="docstring functionBody">
     <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#parse">configargparse.ConfigFileParser.parse</a></code></div>
     
-    <div>Parses the keys + values from a config file.</div>
+    <div><p class="pre">Parses the keys + values from a config file.</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -181,7 +180,7 @@ indexes = [1, 12, 35 , 40]
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">serialize</span>(self, items):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ceb845b5e65be608e72de0bb5cd2b32f517f27c7/configargparse.py#L180">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L180">
       
       (source)
     </a>
@@ -189,8 +188,8 @@ indexes = [1, 12, 35 , 40]
   <div class="docstring functionBody">
     <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#serialize">configargparse.ConfigFileParser.serialize</a></code></div>
     
-    <div>Does the inverse of config parsing by taking parsed values and
-converting them back to a string representing config file contents.</div>
+    <div><p class="pre">Does the inverse of config parsing by taking parsed values and
+converting them back to a string representing config file contents.</p></div>
   </div>
 </div>
 
@@ -202,7 +201,7 @@ converting them back to a string representing config file contents.</div>
   <div class="container">
     <a href="index.html">API Documentation</a> for <a href="https://github.com/bw2/ConfigArgParse" class="projecthome">ConfigArgParse 1.5</a>,
   generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-    21.2.2 at 2021-06-23 21:17:46.
+    21.2.2 at 2021-06-23 21:54:19.
   </div>
 </footer>
 
