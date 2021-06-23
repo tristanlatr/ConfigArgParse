@@ -65,7 +65,7 @@
       </div>
 
       <div class="extrasDocstring">
-        <a href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py" class="sourceLink">(source)</a>
+        <a href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py" class="sourceLink">(source)</a>
         <p></p>
       </div>
 
@@ -81,47 +81,47 @@
     
     <td>Class</td>
     <td><code><a href="configargparse.ArgumentDefaultsRawHelpFormatter.html">ArgumentDefaultsRawHelpFormatter</a></code></td>
-    <td><span>HelpFormatter that adds default values AND doesn't do line-wrapping</span></td>
+    <td>HelpFormatter that adds default values AND doesn't do line-wrapping</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.ArgumentParser.html">ArgumentParser</a></code></td>
-    <td><span>Drop-in replacement for argparse.ArgumentParser that adds support for environment variables and .ini or .yaml-style config files.</span></td>
+    <td>Drop-in replacement for argparse.ArgumentParser that adds support for environment variables and .ini or .yaml-style config files.</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.ConfigFileParser.html">ConfigFileParser</a></code></td>
-    <td><span>This abstract class can be extended to add support for new config file formats</span></td>
+    <td>This abstract class can be extended to add support for new config file formats</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.ConfigFileParserException.html">ConfigFileParserException</a></code></td>
-    <td><span>Raised when config file parsing failed.</span></td>
+    <td>Raised when config file parsing failed.</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.ConfigparserConfigFileParser.html">ConfigparserConfigFileParser</a></code></td>
-    <td><span>parses INI files using pythons configparser.</span></td>
+    <td>parses INI files using pythons configparser.</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.DefaultConfigFileParser.html">DefaultConfigFileParser</a></code></td>
-    <td><span>Based on a simplified subset of INI and YAML formats. Here is the supported syntax::</span></td>
+    <td>Based on a simplified subset of INI and YAML formats. Here is the supported syntax:</td>
   </tr><tr class="class">
     
     <td>Class</td>
     <td><code><a href="configargparse.YAMLConfigFileParser.html">YAMLConfigFileParser</a></code></td>
-    <td><span>Parses YAML config files. Depends on the PyYAML module. https://pypi.python.org/pypi/PyYAML</span></td>
+    <td>Parses YAML config files. Depends on the PyYAML module. <a class="rst-reference external" href="https://pypi.python.org/pypi/PyYAML" target="_top">https://pypi.python.org/pypi/PyYAML</a></td>
   </tr><tr class="function">
     
     <td>Function</td>
     <td><code><a href="#add_argument">add_argument</a></code></td>
-    <td><span>This method supports the same args as ArgumentParser.add_argument(..) as well as the additional args below.</span></td>
+    <td>This method supports the same args as ArgumentParser.add_argument(..) as well as the additional args below.</td>
   </tr><tr class="function">
     
     <td>Function</td>
     <td><code><a href="#already_on_command_line">already_on_command_line</a></code></td>
-    <td><span>Utility method for checking if any of the potential_command_line_args is already present in existing_args.</span></td>
+    <td>Utility method for checking if any of the potential_command_line_args is already present in existing_args.</td>
   </tr><tr class="function">
     
     <td>Function</td>
@@ -131,7 +131,7 @@
     
     <td>Function</td>
     <td><code><a href="#init_argument_parser">init_argument_parser</a></code></td>
-    <td><span>Creates a global ArgumentParser instance with the given name, passing any args other than "name" to the ArgumentParser constructor. This instance can then be retrieved using get_argument_parser(..)</span></td>
+    <td>Creates a global ArgumentParser instance with the given name, passing any args other than "name" to the ArgumentParser constructor. This instance can then be retrieved using get_argument_parser(..)</td>
   </tr><tr class="variable">
     
     <td>Variable</td>
@@ -183,7 +183,7 @@
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">add_argument</span>(self, *args, **kwargs):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L981">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L981">
       
       (source)
     </a>
@@ -191,24 +191,19 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">This method supports the same args as ArgumentParser.add_argument(..)
-as well as the additional args below.
-
-Arguments:
-    env_var: If set, the value of this environment variable will override
-        any config file or default values for this arg (but can itself
-        be overridden on the commandline). Also, if auto_env_var_prefix is
-        set in the constructor, this env var name will be used instead of
-        the automatic name.
-    is_config_file_arg: If True, this arg is treated as a config file path
-        This provides an alternative way to specify config files in place of
-        the ArgumentParser(fromfile_prefix_chars=..) mechanism.
-        Default: False
-    is_write_out_config_file_arg: If True, this arg will be treated as a
-        config file path, and, when it is specified, will cause
-        configargparse to write all current commandline args to this file
-        as config options and then exit.
-        Default: False</p></div>
+    <div>This method supports the same args as ArgumentParser.add_argument(..)
+as well as the additional args below.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">env_var</span></td><td class="fieldArgDesc">If set, the value of this environment variable will override
+any config file or default values for this arg (but can itself
+be overridden on the commandline). Also, if auto_env_var_prefix is
+set in the constructor, this env var name will be used instead of
+the automatic name.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">is_config_file_arg</span></td><td class="fieldArgDesc">If True, this arg is treated as a config file path
+This provides an alternative way to specify config files in place of
+the ArgumentParser(fromfile_prefix_chars=..) mechanism.
+Default: False</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">is_write_out_config_file_arg</span></td><td class="fieldArgDesc">If True, this arg will be treated as a
+config file path, and, when it is specified, will cause
+configargparse to write all current commandline args to this file
+as config options and then exit.
+Default: False</td></tr></table></div>
   </div>
 </div><div class="basefunction">
   
@@ -222,7 +217,7 @@ Arguments:
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">already_on_command_line</span>(existing_args_list, potential_command_line_args, prefix_chars):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L1035">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L1035">
       
       (source)
     </a>
@@ -230,8 +225,8 @@ Arguments:
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Utility method for checking if any of the potential_command_line_args is
-already present in existing_args.</p></div>
+    <div>Utility method for checking if any of the potential_command_line_args is
+already present in existing_args.</div>
   </div>
 </div><div class="basefunction">
   
@@ -245,7 +240,7 @@ already present in existing_args.</p></div>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">get_argument_parser</span>(name=None, **kwargs):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L44">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L44">
       
       (source)
     </a>
@@ -253,10 +248,10 @@ already present in existing_args.</p></div>
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Returns the global ArgumentParser instance with the given name. The 1st
+    <div>Returns the global ArgumentParser instance with the given name. The 1st
 time this function is called, a new ArgumentParser instance will be created
 for the given name, and any args other than "name" will be passed on to the
-ArgumentParser constructor.</p></div>
+ArgumentParser constructor.</div>
   </div>
 </div><div class="basefunction">
   
@@ -270,7 +265,7 @@ ArgumentParser constructor.</p></div>
   <div class="functionHeader">
     
     <span class="py-keyword">def</span> <span class="py-defname">init_argument_parser</span>(name=None, **kwargs):
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L25">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L25">
       
       (source)
     </a>
@@ -278,9 +273,9 @@ ArgumentParser constructor.</p></div>
   <div class="docstring functionBody">
     
     
-    <div><p class="pre">Creates a global ArgumentParser instance with the given name,
+    <div>Creates a global ArgumentParser instance with the given name,
 passing any args other than "name" to the ArgumentParser constructor.
-This instance can then be retrieved using get_argument_parser(..)</p></div>
+This instance can then be retrieved using get_argument_parser(..)</div>
   </div>
 </div><div class="basevariable">
   
@@ -294,7 +289,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ACTION_TYPES_THAT_DONT_NEED_A_VALUE</span> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L17">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L17">
       
       (source)
     </a>
@@ -316,7 +311,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_COMMAND_LINE_SOURCE_KEY</span>: <code><a href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L332">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L332">
       
       (source)
     </a>
@@ -338,7 +333,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_CONFIG_FILE_SOURCE_KEY</span>: <code><a href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L334">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L334">
       
       (source)
     </a>
@@ -360,7 +355,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_DEFAULTS_SOURCE_KEY</span>: <code><a href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L335">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L335">
       
       (source)
     </a>
@@ -382,7 +377,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_ENV_VAR_SOURCE_KEY</span>: <code><a href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L333">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L333">
       
       (source)
     </a>
@@ -404,7 +399,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_parsers</span>: <code><a href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code> =
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/68c0fc671533bb1201782b91ef444dcbbec3b129/configargparse.py#L23">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/131dbfbb708df01b606a21390e174009f546932b/configargparse.py#L23">
       
       (source)
     </a>
@@ -424,7 +419,7 @@ This instance can then be retrieved using get_argument_parser(..)</p></div>
   <div class="container">
     <a href="index.html">API Documentation</a> for <a href="https://github.com/bw2/ConfigArgParse" class="projecthome">ConfigArgParse 1.5</a>,
   generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-    21.2.2 at 2021-06-23 21:54:19.
+    21.2.2 at 2021-06-23 22:19:06.
   </div>
 </footer>
 
