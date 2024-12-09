@@ -6,7 +6,7 @@
 
   <head>
     
-    <title>configargparse.ConfigFileParser</title>
+    <title>configargparse.TomlConfigParser</title>
     <meta name="generator" content="pydoctor 24.11.1"> 
         
     </meta>
@@ -110,7 +110,7 @@
 
       <div class="thingTitle">
         <span>Class</span>
-        <code class="thisobject"><a href="configargparse.ConfigFileParser.html" class="internal-link" title="This class"><wbr></wbr>Config<wbr></wbr>File<wbr></wbr>Parser</a></code> 
+        <code class="thisobject"><a href="configargparse.TomlConfigParser.html" class="internal-link" title="This class"><wbr></wbr>Toml<wbr></wbr>Config<wbr></wbr>Parser</a></code> 
       </div>
       
       <div>
@@ -131,7 +131,7 @@
         
 
         
-            <div class="itemName"><code><a href="#get_syntax_description" class="internal-link" title="configargparse.ConfigFileParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code>
+            <div class="itemName"><code><a href="#__call__" class="internal-link" title="configargparse.TomlConfigParser.__call__">__call__</a></code>
             </div>
         
 
@@ -141,7 +141,7 @@
         
 
         
-            <div class="itemName"><code><a href="#parse" class="internal-link" title="configargparse.ConfigFileParser.parse">parse</a></code>
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="configargparse.TomlConfigParser.__init__">__init__</a></code>
             </div>
         
 
@@ -151,18 +151,54 @@
         
 
         
-            <div class="itemName"><code><a href="#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code>
+            <div class="itemName"><code><a href="#get_syntax_description" class="internal-link" title="configargparse.TomlConfigParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parse" class="internal-link" title="configargparse.TomlConfigParser.parse">parse</a></code>
             </div>
         
 
     </li>
 </ul> 
 
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
         
-         
+        
+        
 
         
-         
+            <div class="itemName"><code><a href="configargparse.ConfigFileParser.html#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sections" class="internal-link" title="configargparse.TomlConfigParser.sections">sections</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -214,7 +250,7 @@
             </div>
         
 
-    </li><li class=" thisobject">
+    </li><li class="">
         
         
         
@@ -254,7 +290,7 @@
             </div>
         
 
-    </li><li class="">
+    </li><li class=" thisobject">
         
         
         
@@ -494,7 +530,7 @@
         
 
         <div class="page-header">
-          <h1 class="class"><code><code><a href="configargparse.html" class="internal-link">configargparse</a></code><wbr></wbr>.<code><a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a></code></code></h1>
+          <h1 class="class"><code><code><a href="configargparse.html" class="internal-link">configargparse</a></code><wbr></wbr>.<code><a href="configargparse.TomlConfigParser.html" class="internal-link" title="configargparse.TomlConfigParser">TomlConfigParser</a></code></code></h1>
           <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
@@ -505,37 +541,87 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ConfigFileParser</span>(<a href="https://docs.python.org/3/library/functions.html#object" class="intersphinx-link">object</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L83" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></p>
-          <p><a href="classIndex.html#configargparse.ConfigFileParser">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TomlConfigParser</span>(<a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L446" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="configargparse.TomlConfigParser.__init__">TomlConfigParser(sections)</a></code></p>
+          <p><a href="classIndex.html#configargparse.TomlConfigParser">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
-          <div><p>This abstract class can be extended to add support for new config file
-formats</p></div>
+          <div><p>Create a TOML parser bounded to the list of provided sections.</p>
+<dl class="rst-docutils">
+<dt>Example::</dt>
+<dd><p class="rst-first"># this is a comment
+[tool.my-software] # TOML section table.
+# how to specify a key-value pair
+format-string = "restructuredtext" # strings must be quoted
+# how to set an arg which has action="store_true"
+warnings-as-errors = true
+# how to set an arg which has action="count" or type=int
+verbosity = 1
+# how to specify a list arg (eg. arg which has action="append")
+repeatable-option = ["<a class="rst-external rst-reference" href="https://docs.python.org/3/objects.inv" target="_top">https://docs.python.org/3/objects.inv</a>",</p>
+<blockquote>
+"<a class="rst-external rst-reference" href="https://twistedmatrix.com/documents/current/api/objects.inv" target="_top">https://twistedmatrix.com/documents/current/api/objects.inv</a>"]</blockquote>
+<p># how to specify a multiline text:
+multi-line-text = '''</p>
+<blockquote class="rst-last">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Vivamus tortor odio, dignissim non ornare non, laoreet quis nunc.
+Maecenas quis dapibus leo, a pellentesque leo.
+'''</blockquote>
+</dd>
+</dl>
+<p>Note that the config file fragment above is also valid for the <code><a href="configargparse.IniConfigParser.html" class="internal-link" title="configargparse.IniConfigParser">IniConfigParser</a></code> class and would be parsed the same manner.
+Thought, any valid TOML config file will not be necessarly parsable with <code><a href="configargparse.IniConfigParser.html" class="internal-link" title="configargparse.IniConfigParser">IniConfigParser</a></code> (INI files must be rigorously indented whereas TOML files).</p>
+<p>See the `TOML specification &lt;&gt;`_ for details.</p>
+</div>
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id76">
+          <table class="children sortable" id="id80">
   
   
   <tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#get_syntax_description" class="internal-link" title="configargparse.ConfigFileParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code></td>
+    <td><code><a href="#__call__" class="internal-link" title="configargparse.TomlConfigParser.__call__">__call__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="configargparse.TomlConfigParser.__init__">__init__</a></code></td>
+    <td><span class="undocumented">No summary</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_syntax_description" class="internal-link" title="configargparse.TomlConfigParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code></td>
     <td>Returns a string describing the config file syntax.</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#parse" class="internal-link" title="configargparse.ConfigFileParser.parse">parse</a></code></td>
-    <td>Parses the keys and values from a config file.</td>
-  </tr><tr class="method">
+    <td><code><a href="#parse" class="internal-link" title="configargparse.TomlConfigParser.parse">parse</a></code></td>
+    <td>Parses the keys and values from a TOML config file.</td>
+  </tr><tr class="instancevariable">
     
-    <td>Method</td>
-    <td><code><a href="#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code></td>
-    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+    <td>Instance Variable</td>
+    <td><code><a href="#sections" class="internal-link" title="configargparse.TomlConfigParser.sections">sections</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
   </tr>
 </table>
           
+            <p class="inheritedFrom">
+              Inherited from <code><a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a></code>:
+            </p>
+            <table class="children sortable" id="id81">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="configargparse.ConfigFileParser.html#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code></td>
+    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+  </tr>
+</table>
+            
 
             
         </div>
@@ -544,7 +630,61 @@ formats</p></div>
           <div class="basemethod">
   
   
-  <a name="configargparse.ConfigFileParser.get_syntax_description">
+  <a name="configargparse.TomlConfigParser.__call__">
+    
+  </a>
+  <a name="__call__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__call__</span><span class="function-signature">(self)</span>:
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L482">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#__call__" title="configargparse.TomlConfigParser.__call__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="configargparse.TomlConfigParser.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, sections)</span>:
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L475">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#__init__" title="configargparse.TomlConfigParser.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">sections</span></td><td class="fieldArgDesc">The section names bounded to the new parser.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="configargparse.TomlConfigParser.get_syntax_description">
     
   </a>
   <a name="get_syntax_description">
@@ -554,24 +694,24 @@ formats</p></div>
     
     
     <span class="py-keyword">def</span> <span class="py-defname">get_syntax_description</span><span class="function-signature">(self)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L87">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L514">
       
       (source)
     </a>
-    <a class="headerLink" href="#get_syntax_description" title="configargparse.ConfigFileParser.get_syntax_description">
+    <a class="headerLink" href="#get_syntax_description" title="configargparse.TomlConfigParser.get_syntax_description">
       
       
       ¶
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
+    <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#get_syntax_description" class="internal-link">configargparse.ConfigFileParser.get_syntax_description</a></code></div>
     <div><p>Returns a string describing the config file syntax.</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="configargparse.ConfigFileParser.parse">
+  <a name="configargparse.TomlConfigParser.parse">
     
   </a>
   <a name="parse">
@@ -581,55 +721,46 @@ formats</p></div>
     
     
     <span class="py-keyword">def</span> <span class="py-defname">parse</span><span class="function-signature">(self, stream)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L91">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L485">
       
       (source)
     </a>
-    <a class="headerLink" href="#parse" title="configargparse.ConfigFileParser.parse">
+    <a class="headerLink" href="#parse" title="configargparse.TomlConfigParser.parse">
       
       
       ¶
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
-    <div><p>Parses the keys and values from a config file.</p>
-<p>NOTE: For keys that were specified to configargparse as
-action="store_true" or "store_false", the config file value must be
-one of: "yes", "no", "on", "off", "true", "false". Otherwise an error will be raised.</p>
-<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">stream:</span><code>IO</code></td><td class="fieldArgDesc">A config file input stream (such as an open file object).</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="https://docs.python.org/3/library/collections.html#collections.OrderedDict" class="intersphinx-link">OrderedDict</a></code></td><td class="fieldArgDesc">Items where the keys are strings and the
-values are either strings or lists (eg. to support config file
-formats like YAML which allow lists).</td></tr></table></div>
+    <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#parse" class="internal-link">configargparse.ConfigFileParser.parse</a></code></div>
+    <div><p>Parses the keys and values from a TOML config file.</p></div>
   </div>
-</div><div class="basemethod">
+</div><div class="baseinstancevariable">
   
   
-  <a name="configargparse.ConfigFileParser.serialize">
+  <a name="configargparse.TomlConfigParser.sections">
     
   </a>
-  <a name="serialize">
+  <a name="sections">
     
   </a>
   <div class="functionHeader">
     
-    
-    <span class="py-keyword">def</span> <span class="py-defname">serialize</span><span class="function-signature">(self, items)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L108">
+    <span class="py-defname">sections</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L480">
       
       (source)
     </a>
-    <a class="headerLink" href="#serialize" title="configargparse.ConfigFileParser.serialize">
+    <a class="headerLink" href="#sections" title="configargparse.TomlConfigParser.sections">
       
       
       ¶
     </a>
   </div>
-  <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
-    <div><p>Does the inverse of config parsing by taking parsed values and
-converting them back to a string representing config file contents.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">items</span></td><td class="fieldArgDesc">an OrderedDict of items to be converted to the config file
-format. Keys should be strings, and values should be either strings
-or lists.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">Contents of config file as a string</td></tr></table></div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
   </div>
 </div>
         </div>

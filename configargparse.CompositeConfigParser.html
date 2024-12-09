@@ -6,7 +6,7 @@
 
   <head>
     
-    <title>configargparse.ConfigFileParser</title>
+    <title>configargparse.CompositeConfigParser</title>
     <meta name="generator" content="pydoctor 24.11.1"> 
         
     </meta>
@@ -110,7 +110,7 @@
 
       <div class="thingTitle">
         <span>Class</span>
-        <code class="thisobject"><a href="configargparse.ConfigFileParser.html" class="internal-link" title="This class"><wbr></wbr>Config<wbr></wbr>File<wbr></wbr>Parser</a></code> 
+        <code class="thisobject"><a href="configargparse.CompositeConfigParser.html" class="internal-link" title="This class"><wbr></wbr>Composite<wbr></wbr>Config<wbr></wbr>Parser</a></code> 
       </div>
       
       <div>
@@ -131,7 +131,7 @@
         
 
         
-            <div class="itemName"><code><a href="#get_syntax_description" class="internal-link" title="configargparse.ConfigFileParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code>
+            <div class="itemName"><code><a href="#__call__" class="internal-link" title="configargparse.CompositeConfigParser.__call__">__call__</a></code>
             </div>
         
 
@@ -141,7 +141,7 @@
         
 
         
-            <div class="itemName"><code><a href="#parse" class="internal-link" title="configargparse.ConfigFileParser.parse">parse</a></code>
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="configargparse.CompositeConfigParser.__init__">__init__</a></code>
             </div>
         
 
@@ -151,18 +151,54 @@
         
 
         
-            <div class="itemName"><code><a href="#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code>
+            <div class="itemName"><code><a href="#get_syntax_description" class="internal-link" title="configargparse.CompositeConfigParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parse" class="internal-link" title="configargparse.CompositeConfigParser.parse">parse</a></code>
             </div>
         
 
     </li>
 </ul> 
 
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
         
-         
+        
+        
 
         
-         
+            <div class="itemName"><code><a href="configargparse.ConfigFileParser.html#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parsers" class="internal-link" title="configargparse.CompositeConfigParser.parsers">parsers</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -204,7 +240,7 @@
             </div>
         
 
-    </li><li class="">
+    </li><li class=" thisobject">
         
         
         
@@ -214,7 +250,7 @@
             </div>
         
 
-    </li><li class=" thisobject">
+    </li><li class="">
         
         
         
@@ -494,7 +530,7 @@
         
 
         <div class="page-header">
-          <h1 class="class"><code><code><a href="configargparse.html" class="internal-link">configargparse</a></code><wbr></wbr>.<code><a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a></code></code></h1>
+          <h1 class="class"><code><code><a href="configargparse.html" class="internal-link">configargparse</a></code><wbr></wbr>.<code><a href="configargparse.CompositeConfigParser.html" class="internal-link" title="configargparse.CompositeConfigParser">CompositeConfigParser</a></code></code></h1>
           <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
@@ -505,37 +541,63 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ConfigFileParser</span>(<a href="https://docs.python.org/3/library/functions.html#object" class="intersphinx-link">object</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L83" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></p>
-          <p><a href="classIndex.html#configargparse.ConfigFileParser">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">CompositeConfigParser</span>(<a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a>): <a href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L629" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="configargparse.CompositeConfigParser.__init__">CompositeConfigParser(config_parser_types)</a></code></p>
+          <p><a href="classIndex.html#configargparse.CompositeConfigParser">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
-          <div><p>This abstract class can be extended to add support for new config file
-formats</p></div>
+          <div><p>Createa a config parser composed by others `ConfigFileParser`s.</p>
+<p>The composite parser will successively try to parse the file with each parser,
+until it succeeds, else raise execption with all encountered errors.</p>
+</div>
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id76">
+          <table class="children sortable" id="id84">
   
   
   <tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#get_syntax_description" class="internal-link" title="configargparse.ConfigFileParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code></td>
+    <td><code><a href="#__call__" class="internal-link" title="configargparse.CompositeConfigParser.__call__">__call__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="configargparse.CompositeConfigParser.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_syntax_description" class="internal-link" title="configargparse.CompositeConfigParser.get_syntax_description">get<wbr></wbr>_syntax<wbr></wbr>_description</a></code></td>
     <td>Returns a string describing the config file syntax.</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#parse" class="internal-link" title="configargparse.ConfigFileParser.parse">parse</a></code></td>
+    <td><code><a href="#parse" class="internal-link" title="configargparse.CompositeConfigParser.parse">parse</a></code></td>
     <td>Parses the keys and values from a config file.</td>
-  </tr><tr class="method">
+  </tr><tr class="instancevariable">
     
-    <td>Method</td>
-    <td><code><a href="#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code></td>
-    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+    <td>Instance Variable</td>
+    <td><code><a href="#parsers" class="internal-link" title="configargparse.CompositeConfigParser.parsers">parsers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
   </tr>
 </table>
           
+            <p class="inheritedFrom">
+              Inherited from <code><a href="configargparse.ConfigFileParser.html" class="internal-link" title="configargparse.ConfigFileParser">ConfigFileParser</a></code>:
+            </p>
+            <table class="children sortable" id="id85">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="configargparse.ConfigFileParser.html#serialize" class="internal-link" title="configargparse.ConfigFileParser.serialize">serialize</a></code></td>
+    <td>Does the inverse of config parsing by taking parsed values and converting them back to a string representing config file contents.</td>
+  </tr>
+</table>
+            
 
             
         </div>
@@ -544,7 +606,61 @@ formats</p></div>
           <div class="basemethod">
   
   
-  <a name="configargparse.ConfigFileParser.get_syntax_description">
+  <a name="configargparse.CompositeConfigParser.__call__">
+    
+  </a>
+  <a name="__call__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__call__</span><span class="function-signature">(self)</span>:
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L641">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#__call__" title="configargparse.CompositeConfigParser.__call__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="configargparse.CompositeConfigParser.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, config_parser_types)</span>:
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L637">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#__init__" title="configargparse.CompositeConfigParser.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="configargparse.CompositeConfigParser.get_syntax_description">
     
   </a>
   <a name="get_syntax_description">
@@ -554,24 +670,24 @@ formats</p></div>
     
     
     <span class="py-keyword">def</span> <span class="py-defname">get_syntax_description</span><span class="function-signature">(self)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L87">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L655">
       
       (source)
     </a>
-    <a class="headerLink" href="#get_syntax_description" title="configargparse.ConfigFileParser.get_syntax_description">
+    <a class="headerLink" href="#get_syntax_description" title="configargparse.CompositeConfigParser.get_syntax_description">
       
       
       ¶
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
+    <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#get_syntax_description" class="internal-link">configargparse.ConfigFileParser.get_syntax_description</a></code></div>
     <div><p>Returns a string describing the config file syntax.</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="configargparse.ConfigFileParser.parse">
+  <a name="configargparse.CompositeConfigParser.parse">
     
   </a>
   <a name="parse">
@@ -581,18 +697,18 @@ formats</p></div>
     
     
     <span class="py-keyword">def</span> <span class="py-defname">parse</span><span class="function-signature">(self, stream)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L91">
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L644">
       
       (source)
     </a>
-    <a class="headerLink" href="#parse" title="configargparse.ConfigFileParser.parse">
+    <a class="headerLink" href="#parse" title="configargparse.CompositeConfigParser.parse">
       
       
       ¶
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.CompositeConfigParser.html" class="internal-link">configargparse.CompositeConfigParser</a></code>, <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.IniConfigParser.html" class="internal-link">configargparse.IniConfigParser</a></code>, <code><a href="configargparse.TomlConfigParser.html" class="internal-link">configargparse.TomlConfigParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
+    <div class="interfaceinfo">overrides <code><a href="configargparse.ConfigFileParser.html#parse" class="internal-link">configargparse.ConfigFileParser.parse</a></code></div>
     <div><p>Parses the keys and values from a config file.</p>
 <p>NOTE: For keys that were specified to configargparse as
 action="store_true" or "store_false", the config file value must be
@@ -601,35 +717,32 @@ one of: "yes", "no", "on", "off", "true", "false". Otherwise an error will be ra
 values are either strings or lists (eg. to support config file
 formats like YAML which allow lists).</td></tr></table></div>
   </div>
-</div><div class="basemethod">
+</div><div class="baseinstancevariable">
   
   
-  <a name="configargparse.ConfigFileParser.serialize">
+  <a name="configargparse.CompositeConfigParser.parsers">
     
   </a>
-  <a name="serialize">
+  <a name="parsers">
     
   </a>
   <div class="functionHeader">
     
-    
-    <span class="py-keyword">def</span> <span class="py-defname">serialize</span><span class="function-signature">(self, items)</span>:
-    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L108">
+    <span class="py-defname">parsers</span> =
+    <a class="sourceLink" href="https://github.com/bw2/ConfigArgParse/tree/ee77f44d03415f2afe73c82096bae2293db29a3b/configargparse.py#L639">
       
       (source)
     </a>
-    <a class="headerLink" href="#serialize" title="configargparse.ConfigFileParser.serialize">
+    <a class="headerLink" href="#parsers" title="configargparse.CompositeConfigParser.parsers">
       
       
       ¶
     </a>
   </div>
-  <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="configargparse.ConfigparserConfigFileParser.html" class="internal-link">configargparse.ConfigparserConfigFileParser</a></code>, <code><a href="configargparse.DefaultConfigFileParser.html" class="internal-link">configargparse.DefaultConfigFileParser</a></code>, <code><a href="configargparse.YAMLConfigFileParser.html" class="internal-link">configargparse.YAMLConfigFileParser</a></code></div>
-    <div><p>Does the inverse of config parsing by taking parsed values and
-converting them back to a string representing config file contents.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">items</span></td><td class="fieldArgDesc">an OrderedDict of items to be converted to the config file
-format. Keys should be strings, and values should be either strings
-or lists.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">Contents of config file as a string</td></tr></table></div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
   </div>
 </div>
         </div>
